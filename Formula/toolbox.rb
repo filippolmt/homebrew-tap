@@ -5,20 +5,20 @@
 class Toolbox < Formula
   desc "CLI for the containerized dev toolbox"
   homepage "https://github.com/filippolmt/toolbox"
-  version "0.31.0"
+  version "0.32.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/filippolmt/toolbox/releases/download/v0.31.0/toolbox_0.31.0_darwin_amd64.tar.gz"
-      sha256 "7ce5b08ab9c2b6c57f686a12de3c01248897ea04afdb2fd930e470d0c42fbbef"
+      url "https://github.com/filippolmt/toolbox/releases/download/v0.32.0/toolbox_0.32.0_darwin_amd64.tar.gz"
+      sha256 "38781bb44f639d8922761a17ddcca905a49b765ba2e050a1344a8da9ab750558"
 
       define_method(:install) do
         bin.install "toolbox"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/filippolmt/toolbox/releases/download/v0.31.0/toolbox_0.31.0_darwin_arm64.tar.gz"
-      sha256 "7ae387b01dd26d9d3fb57095fae3f63546c1df101d7c5fbdb2c487c964abc368"
+      url "https://github.com/filippolmt/toolbox/releases/download/v0.32.0/toolbox_0.32.0_darwin_arm64.tar.gz"
+      sha256 "a9d7e293cf527dbb8803125ec5263ba536c7adf50c14fd64502b65f56485c127"
 
       define_method(:install) do
         bin.install "toolbox"
@@ -28,15 +28,15 @@ class Toolbox < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/filippolmt/toolbox/releases/download/v0.31.0/toolbox_0.31.0_linux_amd64.tar.gz"
-      sha256 "46d1a6a6b45a9681d561ef1c2cb9bdb1bd8bdf72cff4ab7b5d48c262bde1ab52"
+      url "https://github.com/filippolmt/toolbox/releases/download/v0.32.0/toolbox_0.32.0_linux_amd64.tar.gz"
+      sha256 "0d9115c3fe2ac9098762d48c443f0d60be88720f84ba25b4d6a07a374e991a86"
       define_method(:install) do
         bin.install "toolbox"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/filippolmt/toolbox/releases/download/v0.31.0/toolbox_0.31.0_linux_arm64.tar.gz"
-      sha256 "bcd456d77fb76f23c82da5cd18fbeaad6db462726aa2c60c52b8c1c597a4aa3b"
+      url "https://github.com/filippolmt/toolbox/releases/download/v0.32.0/toolbox_0.32.0_linux_arm64.tar.gz"
+      sha256 "d381e97fb593d4bb852db592f73ae53de6e2841190adc8820e75124b3c423009"
       define_method(:install) do
         bin.install "toolbox"
       end
