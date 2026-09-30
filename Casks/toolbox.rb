@@ -6,25 +6,25 @@ cask "toolbox" do
     end
   end
 
-  version "1.2.0"
+  version "1.3.0"
 
   on_macos do
     on_arm do
-      sha256 "20fc40a5173eaeb61195c509518fc18c9e31583004559b092543ec012c128f72"
+      sha256 "8bf2eb021e29aaf2baf494d4945a86ced7eaad46bfe1519ed775d3b0f71783a6"
       url "https://github.com/filippolmt/toolbox/releases/download/v#{version}/toolbox_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "5238d51083a68d3edac297e1d891e2781d403cfbd58e3434ba9fd654841f8ba4"
+      sha256 "0698b601e30af26f9e81ea883a9aa0fb26a706f06ba682126770e9957dfd9fdc"
       url "https://github.com/filippolmt/toolbox/releases/download/v#{version}/toolbox_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "b0615b7696fc47981450eb6d841308cc5520b92ab7a4498fe997067ded0a79d0"
+      sha256 "f251f3113485e7e9968fb08ec2777dcd03df040f10a557b6fff9495bdcfcc89c"
       url "https://github.com/filippolmt/toolbox/releases/download/v#{version}/toolbox_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "16a56f08bc849ce7efcad46be6218fa2eb851fd184d40af1538f4b09915560e0"
+      sha256 "07c325246f6f4061e1765a1b67f56437c890603f917eeac1e087f23839f5f88c"
       url "https://github.com/filippolmt/toolbox/releases/download/v#{version}/toolbox_#{version}_linux_amd64.tar.gz"
     end
   end
