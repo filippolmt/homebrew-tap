@@ -22,25 +22,25 @@ cask "proximo" do
     end
   end
 
-  version "0.16.1"
+  version "0.17.0"
 
   on_macos do
     on_arm do
-      sha256 "97de883365f25d18c2eacc1835a8be0e91357c37ba849d918b0d25a13a83fad4"
+      sha256 "04a86fed1cd8cc6fdf4852c41b58024a1cae41bd1dfc53b80f4e6853265e9c70"
       url "https://github.com/filippolmt/proximo/releases/download/v#{version}/proximo_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "311d3b0374ab82b5be0ca910a99a8e59d1855e181d7df96a09e0c2736f68f5b3"
+      sha256 "71fef9c91b7707015699397c847077bf515ec5aad8362acc7093e336508ac2a3"
       url "https://github.com/filippolmt/proximo/releases/download/v#{version}/proximo_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "d8a7161bf23b727356d1f5d373dbbc7118cf8bd91b44675e1a2a6cdd62b24e68"
+      sha256 "479e049979ff10b877aeb4fb91076b5e38835e18c38c8f78664f17c8d91d6d6f"
       url "https://github.com/filippolmt/proximo/releases/download/v#{version}/proximo_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "a7d18b49cd14bab338534fed70315594790fc597b8a007314005dc8e6ec7aea8"
+      sha256 "4143940748f294c91753acf9ad540b9bf128e7f8a033f11d41e4a08a49dd7a7b"
       url "https://github.com/filippolmt/proximo/releases/download/v#{version}/proximo_#{version}_linux_amd64.tar.gz"
     end
   end
@@ -57,7 +57,7 @@ cask "proximo" do
 
   generate_completions_from_executable "proximo", "completion"
 
-  # No zap stanza required
+  zap :not_required
 
   caveats <<~EOS
     Run `proximo update` after upgrading: it converges the running stack to
