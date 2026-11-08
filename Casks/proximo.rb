@@ -22,32 +22,32 @@ cask "proximo" do
     end
   end
 
-  version "0.17.0"
+  version "0.18.0"
 
   on_macos do
     on_arm do
-      sha256 "04a86fed1cd8cc6fdf4852c41b58024a1cae41bd1dfc53b80f4e6853265e9c70"
+      sha256 "95a62868eb1eedc76f77659a91b05a154d936233a118588bea7d54613802a281"
       url "https://github.com/filippolmt/proximo/releases/download/v#{version}/proximo_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "71fef9c91b7707015699397c847077bf515ec5aad8362acc7093e336508ac2a3"
+      sha256 "cefa37736d56099b98c9f830e48d209024c7c1a3659ad33ec7d220e631106096"
       url "https://github.com/filippolmt/proximo/releases/download/v#{version}/proximo_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "479e049979ff10b877aeb4fb91076b5e38835e18c38c8f78664f17c8d91d6d6f"
+      sha256 "c2b41fe14725df7503fe97e4c09400c31a0259a299ec31726736ea6eaf35cef8"
       url "https://github.com/filippolmt/proximo/releases/download/v#{version}/proximo_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "4143940748f294c91753acf9ad540b9bf128e7f8a033f11d41e4a08a49dd7a7b"
+      sha256 "700c82802323143feab0e864df2cbc136992b9beaf25aa5345f53df9c456a5ae"
       url "https://github.com/filippolmt/proximo/releases/download/v#{version}/proximo_#{version}_linux_amd64.tar.gz"
     end
   end
 
   name "proximo"
   desc "Local development reverse proxy with automatic DNS and trusted HTTPS"
-  homepage "https://github.com/filippolmt/proximo"
+  homepage "https://filippolmt.github.io/proximo/"
 
   livecheck do
     skip "Auto-generated on release."
