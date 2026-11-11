@@ -22,25 +22,25 @@ cask "proximo" do
     end
   end
 
-  version "0.18.0"
+  version "0.18.1"
 
   on_macos do
     on_arm do
-      sha256 "95a62868eb1eedc76f77659a91b05a154d936233a118588bea7d54613802a281"
+      sha256 "75451660b6da4804096320c2b810d05eb8d0c04fb7269139cee0e2c47edc7041"
       url "https://github.com/filippolmt/proximo/releases/download/v#{version}/proximo_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "cefa37736d56099b98c9f830e48d209024c7c1a3659ad33ec7d220e631106096"
+      sha256 "97479370fc7ee13f6eeeb1ca0d3a47789c11a504297e90496a89cf3842add9be"
       url "https://github.com/filippolmt/proximo/releases/download/v#{version}/proximo_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "c2b41fe14725df7503fe97e4c09400c31a0259a299ec31726736ea6eaf35cef8"
+      sha256 "f7b7c7469688350b3160dd43b0e568812a91a9bad80d5ea06a77b17bf2266817"
       url "https://github.com/filippolmt/proximo/releases/download/v#{version}/proximo_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "700c82802323143feab0e864df2cbc136992b9beaf25aa5345f53df9c456a5ae"
+      sha256 "f302454fa7b75b100d0381b04837ad2c72dde410780a1c22301723cd176ad612"
       url "https://github.com/filippolmt/proximo/releases/download/v#{version}/proximo_#{version}_linux_amd64.tar.gz"
     end
   end
